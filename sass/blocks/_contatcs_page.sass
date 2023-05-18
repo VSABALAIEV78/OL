@@ -1,0 +1,49 @@
+.contacts_page
+    min-height: 80vh
+    margin-top: 80px
+    background: url('../img/page_bg.jpeg') center center / cover no-repeat
+
+    .map_wrapper
+        display: flex
+        min-height: 600px
+        width: 950px
+        margin-top: 40px
+        justify-content: start
+        &__contacts_block
+            padding-left: 50px
+            font-size: 19px
+            .city
+                margin-top: 0px
+                margin-left: -20px
+                text-align: center
+            .metro
+                margin-top: 10px
+                position: relative
+                margin-left: 30px
+                &:before
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 30px
+                    height: 20px
+                    background: url('../icons/metro2.png') center center / cover no-repeat
+                    left: -35px
+                    top: 3px
+                    z-index: 2	
+
+            .address
+                margin-top: 10px    
+            .phone
+                &__tel
+                    margin-top: 10px
+                    text-decoration: none
+                    transition: 0.5s all
+                    &:hover
+                        color: $hover_color       
+            .email
+                &_link
+                    transition: 0.5s all
+                    &:hover
+                        color: $hover_color   
+
+

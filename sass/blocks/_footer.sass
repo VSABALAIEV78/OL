@@ -1,3 +1,62 @@
 footer
-    height: 150px
-    background-color: #000
+    height: 130px
+    background-image: linear-gradient(to bottom right, black, grey)
+    padding: 5px 0
+    .footer
+        &__wrapper
+            height: 120px
+            display: flex
+            justify-content: center
+            align-items: center
+            &_item
+                width: 300px
+                height: 120px
+                font-size: 18px
+                display: flex
+                align-items: center
+                justify-content: center
+                color: #ffffff
+                letter-spacing: 0.05em
+            &_contact_info
+                .email
+                    .email_link
+                        color: #c3c3c3
+                        transition: 0.5s all
+                        &:hover
+                            color: #e20404
+                            text-decoration: none  
+                .call
+                    .call_tel
+                        color: #c3c3c3
+                        text-decoration: none  
+                        transition: 0.5s all
+                        &:hover
+                            color: #e20404            
+            &_address
+                font-size: 18px
+                padding-left: 40px
+                .city
+                    font-size: 22px
+                    padding-top: 3px
+                    padding-left: 15%
+
+                
+                .metro
+                    font-size: 18px
+                    position: relative
+                    &:before
+                        content: ''
+                        display: block
+                        position: absolute
+                        width: 25px
+                        height: 20px
+                        background: url('../icons/metro2.png') center center / cover no-repeat
+                        left: -35px
+                        top: 3px
+                        z-index: 2	
+                .street        
+                    font-size: 18px
+
+
+
+
