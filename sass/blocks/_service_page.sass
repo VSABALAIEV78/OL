@@ -1,0 +1,57 @@
+.service_page
+    .service_wrapper
+        box-sizing: border-box
+        display: flex
+        position: relative
+        justify-content: space-around
+        flex-wrap: wrap
+        width: 950px
+        margin: 0 auto
+        .catalog_item
+            margin: 10px 10px
+            padding: 5px 5px
+            width: 250px
+            height: 75px
+            transform: skewX(-25deg)
+            border-radius: 1%
+            border: 0.5px solid #b7b7b7
+            background-color: #e4e4e4
+            text-align: center
+            transition: 0.5s all
+            cursor: pointer
+            display: flex
+            align-items: center
+            justify-content: center
+            color: black
+            &:hover
+                background-color: #e10000
+                color: white
+                border: none
+                box-shadow: 4px 4px 20px 4px #fc7676
+            .item__title
+                transform: skewX(25deg)
+        .catalog_item_active
+            background-color: #e10000
+            color: white
+            border: none
+            box-shadow: 4px 4px 20px 4px #fc7676    
+
+            
+    .selected_service_title
+        margin: 0 auto
+        margin-top: 30px
+
+    .service_block_wrapper
+        margin-top: 30px
+        .service_list
+            display: none
+            transition: 0.4s all
+            &_active
+                transition: 0.4s all
+                display: flex
+        
+
+
+
+    
+
