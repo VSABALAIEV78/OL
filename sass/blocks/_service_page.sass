@@ -1,4 +1,9 @@
 .service_page
+
+    hr
+        width: 900px
+        margin: 25px auto
+
     .service_wrapper
         box-sizing: border-box
         display: flex
@@ -13,7 +18,7 @@
             width: 250px
             height: 75px
             transform: skewX(-25deg)
-            border-radius: 1%
+            border-radius: 2%
             border: 0.5px solid #b7b7b7
             background-color: #e4e4e4
             text-align: center
@@ -30,25 +35,36 @@
                 box-shadow: 4px 4px 20px 4px #fc7676
             .item__title
                 transform: skewX(25deg)
+                font-size: 20px
         .catalog_item_active
             background-color: #e10000
             color: white
             border: none
             box-shadow: 4px 4px 20px 4px #fc7676    
-
             
     .selected_service_title
         margin: 0 auto
-        margin-top: 30px
+        margin-top: 40px
+        font-size: 30px
+        text-align: center
+        width: 50%
+        height: 45px
+        border-radius: 1%
+        border: 0.5px solid #b7b7b7
 
     .service_block_wrapper
-        margin-top: 30px
+        margin-top: 50px
         .service_list
             display: none
             transition: 0.4s all
             &_active
                 transition: 0.4s all
                 display: flex
+            .list
+                font-size: 18px
+                li
+                    margin-top: 5px   
+
         
 
 

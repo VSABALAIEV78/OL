@@ -7,5 +7,13 @@ $(document).ready(function () {
             .closest('div.container').find('div.service_list').removeClass('service_list_active').eq($(this).index()).addClass('service_list_active');
     });
 
+    //change title for .selected_service_title
+
+    $('.catalog_item').each(function (i) {
+        $(this).on('click', function () {
+            $('.selected_service_title').text($('.item__title').eq(i).text());
+            $('.catalog_item').fadeIn();
+        });
+    });
 
 });
