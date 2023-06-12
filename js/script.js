@@ -16,4 +16,72 @@ $(document).ready(function () {
         });
     });
 
+    // .modal consultation
+    $('[data-modal=consultation]').on('click', function () {
+        $('.overlay, #consultation').fadeIn();
+    });
+
+    $('.modal__close').on('click', function () {
+        $('.overlay, #consultation, #thanks').fadeOut();
+    });
+
+    //sending the form to the email
+
+    //phone mask
+
+    $(function ($) {
+        $("input[name=phone]").mask("+38(999) 999-9999");
+    });
+
+    //form validation
+    function formValidation(form) {
+        $(form).validate({
+            rules: {
+                // simple rule, converted to {required:true}
+                name: {
+                    required: true,
+                    minlength: 5
+
+                },
+                phone: {
+                    required: true,
+                },
+                // compound rule
+                email: {
+                    required: true,
+                    email: true
+                }
+            }
+        });
+    }
+    formValidation('#consultation-form');
+    formValidation('#consultation form');
+
+
+    //sent email from the .form
+
+    $('form').submit(function (e) {
+        e.preventDefault();
+
+        // не отправляет пустую невалидную форму
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            $('#consultation').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
+
+        });
+        return false;
+    });
+
+
+
 });

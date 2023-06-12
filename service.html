@@ -21,7 +21,7 @@
                 <nav>
                     <ul class="menu">
                         <li class="menu__item"><a href="index.html" class="menu__link">Головна</a></li>
-                        <li class="menu__item"><a href="company.html" class="menu__link">Про компанію</a></li>
+                        <li class="menu__item"><a href="clients.html" class="menu__link">Клієнтам</a></li>
                         <!-- <li class="menu__item"><a href="team.html" class="menu__link">Команда</a></li> -->
                         <li class="menu__item"><a href="service.html" class="menu__link">Послуги</a></li>
                         <li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
@@ -34,8 +34,9 @@
                                     class="subheader__email_link">a.luzan18@gmail.com</a>
                             </div>
                             <div class="subheader__call">
-                                phone: <a href="tel:+380933262500" class="subheader__call_tel">(093) 326-25-00</a>
+                                phone: <a href="tel:+380933262500" class="subheader__call_tel">+38 (093) 326-25-00</a>
                             </div>
+                            <button class="button-84" role="button" data-modal="consultation">Залишити запит</button>
                         </div>
                     </div>
                 </nav>
@@ -45,7 +46,30 @@
     </header>
     <section class="content">
 
+        <div class="overlay">
+            <div class="modal" id="consultation">
+                <div class="modal__close">&#10008;</div>
+                <div class="modal__subtitle">Заповніть форму заявки
+                </div>
+                <div class="modal__text">ми перетелефонуємо Вам <br> в найближчий час</div>
+                <form class="form form_position" action="#">
+                    <input name="name" type="text" class="form__item" placeholder="Ваше імʼя">
+                    <input name="phone" class="form__item" placeholder="Ваш телефон">
+                    <input name="email" type="email" class="form__item" placeholder="Ваш E-mail">
+                    <button class="button button_form">Залишити запит</button>
+                </form>
+            </div>
+            <div class="modal modal_thanks" id="thanks">
+                <div class="modal__close">&#10008;</div>
+                <div class="modal__subtitle">Дякуємо за Ваш запит!
+                </div>
+                <div class="modal__text">Наш менеджер звʼяжеться з Вами
+                    в найближчий час!</div>
+            </div>
+        </div>
+
         <div class="service_page">
+
             <div class="container">
                 <div class="page_title">
                     <h2 class="page_name">Юридичні послуги</h2>
@@ -192,7 +216,7 @@
                                 class="email_link">a.luzan18@gmail.com</a>
                         </div>
                         <div class="call">
-                            phone: <a href="tel:+380933262500" class="call_tel">(093) 326-25-00</a>
+                            phone: <a href="tel:+380933262500" class="call_tel">+38 (093) 326-25-00</a>
                         </div>
                     </div>
                 </div>

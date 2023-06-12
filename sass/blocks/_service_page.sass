@@ -28,16 +28,17 @@
             align-items: center
             justify-content: center
             color: black
+            transition: 0.3s all
             &:hover
-                background-color: #e10000
                 color: white
+                background-image: linear-gradient(#d9002f, #a70000)
                 border: none
                 box-shadow: 4px 4px 20px 4px #fc7676
             .item__title
                 transform: skewX(25deg)
                 font-size: 20px
         .catalog_item_active
-            background-color: #e10000
+            background-image: linear-gradient(#d9002f, #a70000)
             color: white
             border: none
             box-shadow: 4px 4px 20px 4px #fc7676    
@@ -49,11 +50,14 @@
         text-align: center
         width: 50%
         height: 45px
-        border-radius: 1%
+        border-radius: 5px
         border: 0.5px solid #b7b7b7
+        box-shadow: 2px 2px 20px 2px #a0a0a0
+        text-shadow: 5px 10px 15px #b0b0b0
 
     .service_block_wrapper
         margin-top: 50px
+        padding-bottom: 50px
         .service_list
             display: none
             transition: 0.4s all

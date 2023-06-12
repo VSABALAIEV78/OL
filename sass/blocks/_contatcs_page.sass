@@ -22,23 +22,36 @@
                 width: 30px
                 height: 20px
                 background: url('../icons/metro2.png') center center / cover no-repeat
-                left: -35px
+                left: -40px
                 top: 3px
                 z-index: 2	
 
         .address
-            margin-top: 10px    
+            margin-top: 10px
+            margin-left: 30px
+            position: relative
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                width: 20px
+                height: 20px
+                background: url('../icons/map.png') center center / cover no-repeat
+                left: -35px
+                top: 3px    
         .phone
+            margin-left: 30px
             &__tel
                 margin-top: 10px
                 text-decoration: none
                 transition: 0.5s all
                 &:hover
-                    color: $hover_color       
+                    color: #e00000       
         .email
+            margin-left: 30px
             &_link
                 transition: 0.5s all
                 &:hover
-                    color: $hover_color   
+                    color: #e00000    
 
 

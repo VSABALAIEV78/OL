@@ -15,7 +15,7 @@ footer
                 display: flex
                 align-items: center
                 justify-content: center
-                color: #ffffff
+                color: #c8c8c8
                 letter-spacing: 0.05em
             &_contact_info
                 .email
@@ -56,6 +56,19 @@ footer
                         z-index: 2	
                 .street        
                     font-size: 18px
+                    position: relative
+                    &:before
+                        content: ''
+                        display: block
+                        position: absolute
+                        width: 20px
+                        height: 20px
+                        background: url('../icons/map.png') center center / cover no-repeat
+                        left: -35px
+                        top: 3px
+                        
+                    
+
 
 
 
